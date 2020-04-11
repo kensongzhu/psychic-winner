@@ -1,0 +1,42 @@
+.page-footer {
+  font-size: 0.75rem;
+  bottom: 0;
+  color: #fff;
+  //background-color: rgba(33, 33, 33, 0.75);
+  background-color: #212121;
+
+  // globals in page-footer
+  & h6 {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  & p {
+    margin-bottom: 0.75rem;
+  }
+
+  & a {
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+      color: $link-color;
+    }
+  }
+}
+
+.page-footer .divider {
+  width: 5rem;
+  background-color: $primary;
+}
+
+.page-footer .footer-copyright a {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: $link-color;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
