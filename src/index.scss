@@ -6,7 +6,7 @@ $roboto: "Roboto", sans-serif !default;
 $monoton: "Monoton", cursive !default;
 
 @import "sccs/variables";
-@import "~bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "sccs/form";
 @import "sccs/footer";
 
