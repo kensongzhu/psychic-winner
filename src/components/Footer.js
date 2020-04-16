@@ -1,38 +1,33 @@
 import React from "react";
-import eifer from "../eifer.png";
-import edf from "../edf.png";
+import eifer from "../eifer_dark.png";
+import edf from "../edf_dark.png";
 
 const Footer = () => (
   <footer className="page-footer w-100">
-    <div className="container-fluid">
-      <div className="row mt-3">
-        <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-2">
-          <h6 className="text-uppercase font-weight-bold">EIFER</h6>
-          <hr className="divider mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <i>European Institute for Energy Research</i> is a research
-            institute devoted to energy and the environment in Karlsruhe.
-          </p>
-        </div>
-        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
-          <h6 className="text-uppercase font-weight-bold">Activities</h6>
-          <hr className="divider mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <a href="/">Activities 1</a>
-          </p>
-          <p>
-            <a href="/">Activities 2</a>
-          </p>
-          <p>
-            <a href="/">Activities 3</a>
-          </p>
-        </div>
-        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-2">
-          <h6 className="text-uppercase font-weight-bold">Help</h6>
-          <hr className="divider mb-4 mt-0 d-inline-block mx-auto" />
-          <p>
-            <a href="/">FAQs</a>
-          </p>
+    <div className="container-fluid container-lg">
+      <div className="row mt-3 px-lg-5 py-1">
+        <section className="col mb-3">
+          <div className={"row no-gutters align-items-start mb-3 mb-lg-4"}>
+            <a
+              href={"https://www.eifer.kit.edu/"}
+              className={"col-2 col-md-3 col-lg-2"}
+            >
+              <img src={eifer} alt={"eifer logo"} className={"img-fluid"} />
+            </a>
+            <a
+              href={"https://www.myelectricnetwork.fr/"}
+              className={"col-2 col-md-3 col-lg-2"}
+            >
+              <img src={edf} alt={"edf logo"} className={"img-fluid"} />
+            </a>
+          </div>
+          <p>© 2020 Copyright - EDF. All rights reserved.</p>
+        </section>
+
+        <section className="col-md-2 col-lg-2 col-xl-2 mb-3">
+          <h6 className="text-capitalize font-weight-bold text-white">About</h6>
+          <hr className="divider d-none mb-3 mt-0 d-md-inline-block mx-auto" />
+
           <p>
             <a href="/">Terms and Conditions</a>
           </p>
@@ -42,46 +37,43 @@ const Footer = () => (
           <p>
             <a href="/">Datenschutzhinweise</a>
           </p>
-        </div>
-        <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-2">
-          <h6 className="text-uppercase font-weight-bold">Contact</h6>
-          <hr className="divider mb-3 mt-0 d-inline-block mx-auto" />
+        </section>
+
+        <section className="col-md-2 col-lg-2 col-xl-2 mb-3">
+          <h6 className="text-capitalize font-weight-bold text-white">
+            Support
+          </h6>
+          <hr className="divider d-none mb-3 mt-0 d-md-inline-block mx-auto" />
           <p>
-            <i className="fas fa-home mr-2" />
-            Emmy-Noether-Straße 11, 76131, KA
+            <a href="/">
+              <i className="fas fa-question-circle mr-2" />
+              FAQs
+            </a>
           </p>
           <p>
-            <i className="fas fa-envelope mr-2" />{" "}
-            <a href="mailto:info-calobs@eifer.org">info-calobs@eifer.org</a>
+            <a href="mailto:info-calobs@eifer.org">
+              <i className="fas fa-envelope mr-2" />
+              Contact
+            </a>
+          </p>
+        </section>
+
+        <section className="col-md-2 col-lg-2 col-xl-2 mb-3">
+          <h6 className="text-capitalize font-weight-bold text-white">
+            Partners
+          </h6>
+          <hr className="divider d-none mb-3 mt-0 d-md-inline-block mx-auto" />
+          <p>
+            <a href="/">DALKIA</a>
           </p>
           <p>
-            <i className="fas fa-phone mr-2" /> + 49 123 456 789
+            <a href="/">EDF R&D - France</a>
           </p>
           <p>
-            <i className="fas fa-print mr-2" /> + 49 123 456 789
+            <a href="/">EDF R&D - SA</a>
           </p>
-        </div>
+        </section>
       </div>
-    </div>
-    {/*<hr className="deep-purple mx-4 my-1"/>*/}
-    <div className="footer-copyright py-3 text-center">
-      <div className={"d-flex justify-content-center align-items-center mb-1"}>
-        <a
-          href={"https://www.eifer.kit.edu/"}
-          style={{ width: 50 }}
-          className={"px-1"}
-        >
-          <img src={eifer} className={"img-fluid"} alt={"eifer site"} />
-        </a>
-        <a
-          href={"https://www.myelectricnetwork.fr/"}
-          style={{ width: 50 }}
-          className={"px-1"}
-        >
-          <img src={edf} className={"img-fluid"} alt={"edf site"} />
-        </a>
-      </div>
-      <div>© 2020 Copyright - EIFER. All rights reserved.</div>
     </div>
   </footer>
 );
