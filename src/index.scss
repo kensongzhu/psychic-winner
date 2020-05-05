@@ -1,16 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
-// fonts
-$roboto: "Roboto", sans-serif !default;
-
+@import "sccs/fonts";
 @import "sccs/variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "sccs/form";
-@import "sccs/footer";
 
 html,
 body {
-  font-family: $roboto;
+  font-family: $proxima-nova-regular;
   //height: 100%;
   width: 100vw;
   height: 100vh;
