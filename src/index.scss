@@ -4,17 +4,13 @@
 
 html,
 body {
-  font-family: $proxima-nova-regular;
-  //height: 100%;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  font-family: $proxima-nova-regular;
+  background-color: #b1d5e9;
 }
 
 #root {
-  height: inherit;
-}
-
-.wrapper {
   height: inherit;
 }
