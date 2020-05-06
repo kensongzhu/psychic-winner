@@ -6,12 +6,8 @@ const ForgotPassword = () => {
 
   return (
     <>
-      {/*<h2 className={"text-center form-title mb-4"}>Recovery</h2>*/}
-      <form
-        method={"post"}
-        className={"calobs-form form-sm"}
-        onSubmit={handleSubmit}
-      >
+      <h1 className={"f-bold mb-6"}>Access recovery</h1>
+      <form method={"post"} onSubmit={handleSubmit} className={"calobs-form"}>
         <fieldset className="form-group">
           <label className={"form-label"} htmlFor="username-or-email">
             Username / Email:
@@ -24,20 +20,15 @@ const ForgotPassword = () => {
             placeholder="Username or Email"
             required
           />
-          <span className={"form-focus"} data-fa-icon="&#xf2b6;" />
         </fieldset>
 
-        <div className={"text-right my-3"}>
-          <Link to={"/"}>To Login Page</Link>
-        </div>
-
-        <div className={"d-flex flex-wrap justify-content-end"}>
+        <div className={"d-flex flex-wrap justify-content-center mt-6"}>
           <button
             id="btn-recover-pass"
             type="submit"
             className="btn btn-primary submit-btn mb-3"
           >
-            Recover Password
+            Send
           </button>
         </div>
       </form>

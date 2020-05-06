@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import captcha from "../captcha.jpg";
+import React, { useState } from "react";
+import captcha from "../captcha.png";
 
-const SignUp = () => {
+const SignUpForm = () => {
+  const [company, setCompany] = useState("Choose...");
   const handleSubmit = (evt) => evt.preventDefault();
 
   return (
     <>
-      {/*<h2 className={"text-center form-title mb-4"}>Sign Up</h2>*/}
+      <h1 className={"f-bold mb-4 mb-md-6"}>Join Now</h1>
       <form
         method={"post"}
         className={"calobs-form form-md"}
@@ -15,7 +15,7 @@ const SignUp = () => {
       >
         {/* First Name and Last Name  */}
         <div className={"form-row"}>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="first-name">
                 First name
@@ -23,15 +23,14 @@ const SignUp = () => {
               <input
                 id="first-name"
                 type="text"
-                className="form-control px-0"
+                className="form-control"
                 name="first-name"
                 placeholder="First name"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="last-name">
                 Last name
@@ -39,19 +38,18 @@ const SignUp = () => {
               <input
                 id="last-name"
                 type="text"
-                className="form-control px-0"
+                className="form-control"
                 name="last-name"
                 placeholder="Last name"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
         </div>
 
         {/* Username and Email  */}
         <div className={"form-row"}>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="username">
                 Username
@@ -59,7 +57,7 @@ const SignUp = () => {
               <input
                 id="username"
                 type="text"
-                className="form-control px-0"
+                className="form-control"
                 name="username"
                 placeholder="Username"
                 required
@@ -67,7 +65,7 @@ const SignUp = () => {
               <span className={"form-focus"} />
             </fieldset>
           </div>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="email">
                 Email
@@ -75,7 +73,7 @@ const SignUp = () => {
               <input
                 id="email"
                 type="email"
-                className="form-control px-0"
+                className="form-control"
                 name="email"
                 placeholder="Email"
                 required
@@ -89,8 +87,13 @@ const SignUp = () => {
           <label className={"form-label"} htmlFor="company">
             Company
           </label>
-          <select id="company" className="form-control px-0">
-            <option selected>Choose...</option>
+          <select
+            id="company"
+            className="form-control"
+            onChange={(evt) => setCompany(evt.target.value)}
+            value={company}
+          >
+            <option value={"Choose..."}>Choose...</option>
             <option value={"Company 1"}>Company 1</option>
             <option value={"Company 2"}>Company 2</option>
             <option value={"Company 3"}>Company 3</option>
@@ -99,7 +102,7 @@ const SignUp = () => {
 
         {/* Password and Password confirmation   */}
         <div className={"form-row"}>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="password">
                 Password
@@ -107,7 +110,7 @@ const SignUp = () => {
               <input
                 id="password"
                 type="password"
-                className="form-control px-0"
+                className="form-control"
                 name="password"
                 placeholder="Password"
                 required
@@ -115,7 +118,7 @@ const SignUp = () => {
               <span className={"form-focus"} />
             </fieldset>
           </div>
-          <div className={"col-12 col-lg-6"}>
+          <div className={"col-6 col-lg-6"}>
             <fieldset className={"form-group"}>
               <label className={"form-label"} htmlFor="password-confirm">
                 Password confirmation
@@ -123,7 +126,7 @@ const SignUp = () => {
               <input
                 id="password-confirm"
                 type="password"
-                className="form-control px-0"
+                className="form-control"
                 name="password-confirm"
                 placeholder="Password confirmation"
                 required
@@ -134,23 +137,22 @@ const SignUp = () => {
         </div>
 
         {/* Captcha */}
-        <div className={"form-row justify-content-between"}>
-          <label className={"form-label col-12 mb-2"} htmlFor="captcha">
-            Captcha
-          </label>
-          <div className={"col-2 col-md-3"}>
-            <img className={"image-fluid"} src={captcha} alt={"captcha"} />
+        <div className={"form-row justify-content-between align-items-center"}>
+          <div className={"col-3"}>
+            <img className={"img-fluid"} src={captcha} alt={"captcha"} />
           </div>
-          <div className={"col-7 col-md-8"}>
+          <div className={"col-9"}>
             <fieldset className={"form-group"}>
+              <label className={"form-label"} htmlFor="captcha">
+                Captcha
+              </label>
               <input
                 id="captcha"
                 type="text"
-                className="form-control px-0"
+                className="form-control"
                 name="captcha"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
         </div>
@@ -161,26 +163,26 @@ const SignUp = () => {
             className="custom-control-input"
             id="agree-terms"
           />
-          <label className="custom-control-label" htmlFor="agree-terms">
+          <label
+            className="custom-control-label f-semi-bold"
+            htmlFor="agree-terms"
+          >
             Agree to the Terms and Conditions and Privacy Policy
           </label>
         </div>
 
-        <button
-          id="btn-recover-pass"
-          type="submit"
-          className="btn btn-primary btn-lg submit-btn mb-3 w-100 mt-3"
-        >
-          Sign up
-        </button>
-
-        <div className={"text-center my-3"}>
-          <span className={"mr-1"}>Have an account?</span>
-          <Link to="/">{"Sign in"}</Link>
+        <div className={"d-flex justify-content-center"}>
+          <button
+            id="btn-recover-pass"
+            type="submit"
+            className="btn btn-primary submit-btn mb-3 mt-3"
+          >
+            Start
+          </button>
         </div>
       </form>
     </>
   );
 };
 
-export default SignUp;
+export default SignUpForm;

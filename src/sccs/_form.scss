@@ -1,119 +1,55 @@
-$icon-font: "Font Awesome 5 Free" !default;
-
-@include media-breakpoint-up(sm) {
-  .form-sm {
-    min-width: 450px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .form-md {
-    min-width: 600px;
-  }
-}
-
-//.form-title {
-//  font-family: $monoton;
-//  letter-spacing: 0.1rem;
-//}
-
-.calobs-form .form-group {
-  position: relative;
-  border-bottom: 2px solid $gray-300;
-}
-
 .calobs-form .form-label {
-  margin-bottom: 2px;
-  color: $gray-900;
-  font-weight: bold;
-  font-size: 0.875rem;
-  letter-spacing: 0.05em;
+  //margin-bottom: 4px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: $proxima-nova-semi-bold;
+  line-height: 1.2;
+
+  & label {
+    margin-bottom: 0;
+  }
 }
 
-.calobs-form .form-focus {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.calobs-form .form-focus::before {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  display: block;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, $teal, $pink, $yellow);
-  transition: all 0.4s;
-  content: "";
-}
-
-.calobs-form .form-focus::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  //height: calc(100% - 28px);
-  //height: inherit;
-  // TODO magic number
-  margin-bottom: 0.5rem;
-  color: $gray-600;
-  // font-weight: 900 is required in FontAwesome is required
-  font-weight: 900;
-  // font-family changed in FontAwesome 5
-  font-family: $icon-font;
-  content: attr(data-fa-icon);
+.calobs-form .custom-control-label {
+  font-size: 14px;
+  font-family: $proxima-nova-semi-bold;
 }
 
 .calobs-form .form-control {
-  padding-left: 1.5rem;
-  border: none;
+  height: 40px;
+  font-family: $proxima-nova-semi-bold;
 
   &::placeholder {
-    color: $gray-500;
+    color: #979797;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.calobs-form select {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@include media-breakpoint-up(lg) {
+  .calobs-form .form-label {
+    font-size: 15px;
   }
 
-  &:focus {
-    // disable default box-shadow
-    box-shadow: none;
-    // placeholder
+  .calobs-form .custom-control-label {
+    font-size: 15px;
+  }
+
+  .calobs-form .form-control {
+    height: 50px;
+
     &::placeholder {
-      color: transparent;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 
-  &:focus + .form-focus::before,
-  &:valid + .form-focus::before {
-    width: 100%;
+  .calobs-form select {
+    font-size: 14px;
   }
-
-  &:focus + .form-focus::after,
-  &:valid + .form-focus::after {
-    color: $purple;
-  }
-}
-
-.calobs-form a {
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.submit-btn {
-  //background: $teal;
-  //background: linear-gradient(90deg, $teal, $pink, $yellow);
-  border: none;
-  border-radius: 1.5rem;
-  //transition: all .4s;
-
-  //&:hover {
-  //  background: $teal;
-  //  background: linear-gradient(270deg, $teal, $pink, $yellow);
-  //}
 }

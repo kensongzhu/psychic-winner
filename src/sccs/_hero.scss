@@ -1,0 +1,18 @@
+.hero {
+  width: 100%;
+  height: 250px;
+  background: white url("../illustration.svg") no-repeat center;
+  background-size: contain;
+}
+
+@include media-breakpoint-up(md) {
+  .hero {
+    height: 500px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .hero {
+    height: 600px;
+  }
+}

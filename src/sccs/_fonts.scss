@@ -1,3 +1,4 @@
+// font faces
 @font-face {
   font-weight: normal;
   font-family: "ProximaNovaRegular";
@@ -30,7 +31,20 @@
     url("../fonts/proxima-nova/proxima-nova-bold-webfont.svg#ProximaNovaLight") format("svg");
 }
 
-// Fonts Variables
+// fonts variables
 $proxima-nova-regular: "ProximaNovaRegular", sans-serif !default;
 $proxima-nova-semi-bold: "ProximaNovaSemibold", sans-serif !default;
 $proxima-nova-bold: "ProximaNovaBold", sans-serif !default;
+
+// fonts utils class
+.f-regular {
+  font-family: $proxima-nova-regular !important;
+}
+
+.f-semi-bold {
+  font-family: $proxima-nova-semi-bold !important;
+}
+
+.f-bold {
+  font-family: $proxima-nova-bold !important;
+}

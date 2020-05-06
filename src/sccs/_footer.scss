@@ -1,44 +1,17 @@
-.page-footer {
-  bottom: 0;
-  //color: #fff;
-  color: #727272;
-  font-size: 0.75rem;
-  //background-color: rgba(33, 33, 33, 0.75);
-  background-color: #212121;
-
-  // globals in page-footer
-  & h6 {
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-  }
-
-  & p {
-    margin-bottom: 0.75rem;
-  }
+.footer {
+  font-size: 0.5rem;
 
   & a {
-    color: $white;
-    color: #727272;
+    color: $black;
 
     &:hover {
-      color: $link-color;
-      text-decoration: none;
+      color: $primary;
     }
   }
 }
 
-.page-footer .divider {
-  width: 5rem;
-  background-color: $primary;
-}
-
-.page-footer .footer-copyright a {
-  color: $link-color;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-
-  &:hover {
-    color: $link-hover-color;
+@include media-breakpoint-up(sm) {
+  .footer {
+    font-size: 1rem;
   }
 }
