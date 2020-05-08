@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e07ecb3434f6c902ee569b4d9d81701",
+    "revision": "6e74ec24a71cfa93e256716c460d6af2",
     "url": "/psychic-winner/index.html"
   },
   {
-    "revision": "9405991ab2307eb5eb4d",
-    "url": "/psychic-winner/static/css/main.0c0d2d68.chunk.css"
+    "revision": "e8eb9b22570a133c3fb4",
+    "url": "/psychic-winner/static/css/main.3e092acf.chunk.css"
   },
   {
     "revision": "63e8360908377ce3c796",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/psychic-winner/static/js/2.88b0778a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9405991ab2307eb5eb4d",
+    "revision": "e8eb9b22570a133c3fb4",
     "url": "/psychic-winner/static/js/main.4ba1535c.chunk.js"
   },
   {

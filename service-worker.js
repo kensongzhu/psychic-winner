@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/psychic-winner/precache-manifest.5fc4d2b02d65713cc2c0b02fb8ce2e1e.js"
+  "/psychic-winner/precache-manifest.feb7063d70ea17de05e956fd9ba65cfa.js"
 );
 
 self.addEventListener('message', (event) => {
