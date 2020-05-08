@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/calobs-home/static/css/main.dc0c8d7e.chunk.css",
-    "main.js": "/calobs-home/static/js/main.8d63d998.chunk.js",
-    "main.js.map": "/calobs-home/static/js/main.8d63d998.chunk.js.map",
-    "runtime-main.js": "/calobs-home/static/js/runtime-main.cfe2951f.js",
-    "runtime-main.js.map": "/calobs-home/static/js/runtime-main.cfe2951f.js.map",
-    "static/js/2.88b0778a.chunk.js": "/calobs-home/static/js/2.88b0778a.chunk.js",
-    "static/js/2.88b0778a.chunk.js.map": "/calobs-home/static/js/2.88b0778a.chunk.js.map",
-    "index.html": "/calobs-home/index.html",
-    "precache-manifest.35d7704e4c03d94ab809a4c73672b15a.js": "/calobs-home/precache-manifest.35d7704e4c03d94ab809a4c73672b15a.js",
-    "service-worker.js": "/calobs-home/service-worker.js",
-    "static/css/main.dc0c8d7e.chunk.css.map": "/calobs-home/static/css/main.dc0c8d7e.chunk.css.map",
-    "static/js/2.88b0778a.chunk.js.LICENSE.txt": "/calobs-home/static/js/2.88b0778a.chunk.js.LICENSE.txt",
-    "static/media/calobs.svg": "/calobs-home/static/media/calobs.eadb60b9.svg",
-    "static/media/captcha.png": "/calobs-home/static/media/captcha.3328cd25.png",
-    "static/media/edf.svg": "/calobs-home/static/media/edf.eff17a7c.svg",
-    "static/media/eifer.svg": "/calobs-home/static/media/eifer.262a97ef.svg",
-    "static/media/index.scss": "/calobs-home/static/media/proxima-nova-semibold-webfont.78604042.svg"
+    "main.css": "/psychic-winner/static/css/main.0c0d2d68.chunk.css",
+    "main.js": "/psychic-winner/static/js/main.c67f120c.chunk.js",
+    "main.js.map": "/psychic-winner/static/js/main.c67f120c.chunk.js.map",
+    "runtime-main.js": "/psychic-winner/static/js/runtime-main.46110d93.js",
+    "runtime-main.js.map": "/psychic-winner/static/js/runtime-main.46110d93.js.map",
+    "static/js/2.88b0778a.chunk.js": "/psychic-winner/static/js/2.88b0778a.chunk.js",
+    "static/js/2.88b0778a.chunk.js.map": "/psychic-winner/static/js/2.88b0778a.chunk.js.map",
+    "index.html": "/psychic-winner/index.html",
+    "precache-manifest.b3f12ec10a337188e6c7aadacb8e7131.js": "/psychic-winner/precache-manifest.b3f12ec10a337188e6c7aadacb8e7131.js",
+    "service-worker.js": "/psychic-winner/service-worker.js",
+    "static/css/main.0c0d2d68.chunk.css.map": "/psychic-winner/static/css/main.0c0d2d68.chunk.css.map",
+    "static/js/2.88b0778a.chunk.js.LICENSE.txt": "/psychic-winner/static/js/2.88b0778a.chunk.js.LICENSE.txt",
+    "static/media/calobs.svg": "/psychic-winner/static/media/calobs.eadb60b9.svg",
+    "static/media/captcha.png": "/psychic-winner/static/media/captcha.3328cd25.png",
+    "static/media/edf.svg": "/psychic-winner/static/media/edf.eff17a7c.svg",
+    "static/media/eifer.svg": "/psychic-winner/static/media/eifer.262a97ef.svg",
+    "static/media/index.scss": "/psychic-winner/static/media/proxima-nova-semibold-webfont.78604042.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.cfe2951f.js",
+    "static/js/runtime-main.46110d93.js",
     "static/js/2.88b0778a.chunk.js",
-    "static/css/main.dc0c8d7e.chunk.css",
-    "static/js/main.8d63d998.chunk.js"
+    "static/css/main.0c0d2d68.chunk.css",
+    "static/js/main.c67f120c.chunk.js"
   ]
 }

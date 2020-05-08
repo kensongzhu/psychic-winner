@@ -11,16 +11,14 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
-);
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/calobs-home/precache-manifest.35d7704e4c03d94ab809a4c73672b15a.js"
+  "/psychic-winner/precache-manifest.b3f12ec10a337188e6c7aadacb8e7131.js"
 );
 
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
   }
 });
@@ -35,9 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(
-  workbox.precaching.getCacheKeyForURL("/calobs-home/index.html"),
-  {
-    blacklist: [/^\/_/, /\/[^\/?]+\.[^\/]+$/],
-  }
-);
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/psychic-winner/index.html"), {
+  
+  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
+});
