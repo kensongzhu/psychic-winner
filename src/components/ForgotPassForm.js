@@ -5,7 +5,7 @@ const ForgotPassword = () => {
   const handleSubmit = (evt) => evt.preventDefault();
 
   return (
-    <>
+    <div className={"w-100"}>
       <h1 className={"f-bold mb-6"}>Access recovery</h1>
       <form method={"post"} onSubmit={handleSubmit} className={"calobs-form"}>
         <fieldset className="form-group">
@@ -32,7 +32,7 @@ const ForgotPassword = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

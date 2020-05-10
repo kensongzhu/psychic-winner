@@ -6,7 +6,7 @@ const SignUpForm = () => {
   const handleSubmit = (evt) => evt.preventDefault();
 
   return (
-    <>
+    <div className={"w-100"}>
       <h1 className={"f-bold mb-4 mb-md-6"}>Join Now</h1>
       <form
         method={"post"}
@@ -181,7 +181,7 @@ const SignUpForm = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 

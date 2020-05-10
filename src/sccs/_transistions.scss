@@ -1,0 +1,37 @@
+$transition-duration: 700ms !default;
+$transition-function: ease !default;
+
+.moveFromRightFade-enter,
+.moveFromRightFade-appear {
+  transform: translate3d(50%, 0, 0);
+  opacity: 0.3;
+}
+
+.moveFromRightFade-appear-active,
+.moveFromRightFade-enter-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition: all $transition-duration $transition-function;
+}
+
+//.moveFromRightFade-exit {
+//  transform: translate3d(100%, 0, 0);
+//}
+//
+//.moveFromRightFade-exit-active {
+//  transform: translate3d(0, 0, 0);
+//  transition: all $transition-duration $transition-function;
+//}
+
+.moveFromBottomFade-enter,
+.moveFromBottomFade-appear {
+  transform: translate3d(0, 100%, 0);
+  opacity: 0.3;
+}
+
+.moveFromBottomFade-appear-active,
+.moveFromBottomFade-enter-active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+  transition: all $transition-duration $transition-function;
+}

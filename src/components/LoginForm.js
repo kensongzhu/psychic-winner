@@ -22,7 +22,7 @@ const LoginForm = () => {
   const handleSubmit = (evt) => evt.preventDefault();
 
   return (
-    <>
+    <div className={"w-100"}>
       <h1 className={"f-bold mb-4 mb-md-6"}>Sign in</h1>
       <form
         id="loginform"
@@ -85,7 +85,7 @@ const LoginForm = () => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
 
