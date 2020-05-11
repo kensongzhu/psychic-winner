@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "32fbde98bb1d96410b4959ef5f9a7367",
+    "revision": "216bf94781d77117e5084756e0589f1d",
     "url": "/psychic-winner/index.html"
   },
   {
-    "revision": "fdf839fbbdbd237976cb",
-    "url": "/psychic-winner/static/css/main.0559ae56.chunk.css"
+    "revision": "54e291214cd3b647e724",
+    "url": "/psychic-winner/static/css/main.d040b1df.chunk.css"
   },
   {
     "revision": "2256413d8d07f059893f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/psychic-winner/static/js/2.f08bbbb4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fdf839fbbdbd237976cb",
-    "url": "/psychic-winner/static/js/main.f0bcbc4b.chunk.js"
+    "revision": "54e291214cd3b647e724",
+    "url": "/psychic-winner/static/js/main.a8f11f97.chunk.js"
   },
   {
     "revision": "579b54d65a27ad7f8cee",
@@ -30,14 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3328cd254f7e093657842204b7e18fdc",
     "url": "/psychic-winner/static/media/captcha.3328cd25.png"
-  },
-  {
-    "revision": "eff17a7c51c24a7a6e90824db9e5a261",
-    "url": "/psychic-winner/static/media/edf.eff17a7c.svg"
-  },
-  {
-    "revision": "262a97efe8654635841a93646bc053ee",
-    "url": "/psychic-winner/static/media/eifer.262a97ef.svg"
   },
   {
     "revision": "18356dda7f475271c89b628c7ef1a070",
