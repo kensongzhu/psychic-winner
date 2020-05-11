@@ -1,7 +1,5 @@
 import React from "react";
 import calbos from "../calobs.svg";
-import eifer from "../eifer.svg";
-import edf from "../edf.svg";
 import { Link, Route, Switch } from "react-router-dom";
 
 const PageNavigator = ({ description, to, where }) => (
@@ -20,17 +18,17 @@ const Header = () => (
     {/*Logo*/}
     <nav
       className={
-        "col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center"
+        "col-12 col-md-6 d-flex justify-content-md-start align-items-center"
       }
     >
       <a href={"/"}>
-        <img src={calbos} alt={"app"} className={"img-thumbnail border-0"} />
-      </a>
-      <a href={"https://www.eifer.kit.edu/"}>
-        <img src={eifer} alt={"eifer"} className={"img-thumbnail border-0"} />
-      </a>
-      <a href={"https://www.myelectricnetwork.fr/"}>
-        <img src={edf} alt={"edf"} className={"img-thumbnail border-0"} />
+        <img
+          src={calbos}
+          alt={"app"}
+          className={"px-1 py-4"}
+          width={175}
+          height={"auto"}
+        />
       </a>
     </nav>
 
