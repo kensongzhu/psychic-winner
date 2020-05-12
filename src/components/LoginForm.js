@@ -23,13 +23,14 @@ const LoginForm = () => {
 
   return (
     <div className={"w-100"}>
-      <h1 className={"f-bold mb-4 mb-md-6"}>Sign in</h1>
       <form
         id="loginform"
         method="post"
         onSubmit={handleSubmit}
         className={"calobs-form"}
       >
+        <h1 className={"form-title"}>Sign in</h1>
+
         <fieldset className="form-group mb-6">
           <label className={"form-label"} htmlFor="login-username">
             Username

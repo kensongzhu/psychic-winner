@@ -9,14 +9,9 @@ function App() {
   return (
     <Router basename={"psychic-winner"}>
       <div
-        id={"app"}
-        className={"container-fluid d-flex flex-column p-3 px-md-5 py-md-5"}
+        className={"app container-fluid d-flex flex-column p-3 px-md-3 py-md-4"}
       >
-        <div
-          className={
-            "app-wrapper position-relative d-flex flex-column bg-white flex-grow-1 px-3 px-md-6"
-          }
-        >
+        <div className={"app-wrapper"}>
           {/*Header*/}
           <Header />
 

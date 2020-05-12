@@ -1,5 +1,6 @@
 import React from "react";
-import calbos from "../calobs.svg";
+import calbos125 from "../calobs125.png";
+import calobs150 from "../calobs150.png";
 import { Link, Route, Switch } from "react-router-dom";
 
 const PageNavigator = ({ description, to, where }) => (
@@ -22,19 +23,16 @@ const Header = () => (
       }
     >
       <a href={"/"}>
-        <img
-          src={calbos}
-          alt={"app"}
-          className={"px-1 py-4"}
-          width={175}
-          height={"auto"}
-        />
+        <picture>
+          <source srcSet={calobs150} media={"(min-width: 576px)"} />
+          <img src={calbos125} alt={"app"} className={"img-fluid px-1 py-3"} />
+        </picture>
       </a>
     </nav>
 
     <div
       className={
-        "d-none d-md-flex align-items-center align-self-start py-5 f-semi-bold"
+        "d-none d-md-flex align-items-center align-self-start py-4 f-semi-bold"
       }
     >
       <Switch>

@@ -6,6 +6,7 @@
 @import "sccs/btn";
 @import "sccs/hero";
 @import "sccs/footer";
+@import "sccs/app";
 
 html,
 body {
@@ -13,30 +14,11 @@ body {
   height: 100%;
   //overflow-x: hidden;
   font-family: $proxima-nova-regular;
-  background-color: #b1d5e9;
+  //background-color: #b1d5e9;
+  background-color: rgb(166, 202, 99);
 }
 
 #root {
   width: inherit;
   height: inherit;
-}
-
-#app {
-  width: inherit;
-}
-
-@include media-breakpoint-up(lg) {
-  #app {
-    height: inherit;
-  }
-}
-
-@media (min-height: 700px) {
-  #app {
-    height: inherit;
-  }
-}
-
-.app-wrapper {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }

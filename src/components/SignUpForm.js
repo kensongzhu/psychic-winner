@@ -7,12 +7,12 @@ const SignUpForm = () => {
 
   return (
     <div className={"w-100"}>
-      <h1 className={"f-bold mb-4 mb-md-6"}>Join Now</h1>
       <form
         method={"post"}
         className={"calobs-form form-md"}
         onSubmit={handleSubmit}
       >
+        <h1 className={"form-title"}>Join Now</h1>
         {/* First Name and Last Name  */}
         <div className={"form-row"}>
           <div className={"col-6 col-lg-6"}>
@@ -177,7 +177,7 @@ const SignUpForm = () => {
             type="submit"
             className="btn btn-primary submit-btn mb-3 mt-3"
           >
-            Start
+            Register
           </button>
         </div>
       </form>

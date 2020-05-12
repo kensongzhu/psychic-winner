@@ -1,55 +1,68 @@
-.calobs-form .form-label {
-  //margin-bottom: 4px;
-  margin-bottom: 0;
-  font-size: 14px;
+$form-label-font_size: 14px !default;
+$form-label-line-height: 1.25 !default;
+$form-control-height: 40px !default;
+$form-control-lg-height: 50px !default;
+$form-control-color: #979797 !default;
+$form-control-font-size: 10px !default;
+$form-control-line-height: 12px !default;
+$form-control-lg-font-size: 14px !default;
+$form-control-lg-line-height: 18px !default;
+
+.calobs-form .form-title {
+  margin-bottom: 1.25rem;
+  font-family: $proxima-nova-bold;
+}
+
+.calobs-form .form-label,
+.calobs-form .custom-control-label {
+  font-size: $form-label-font_size;
   font-family: $proxima-nova-semi-bold;
-  line-height: 1.2;
+}
+
+.calobs-form .form-label {
+  margin-bottom: 0;
+  line-height: $form-label-line-height;
 
   & label {
     margin-bottom: 0;
   }
 }
 
-.calobs-form .custom-control-label {
-  font-size: 14px;
-  font-family: $proxima-nova-semi-bold;
-}
-
 .calobs-form .form-control {
-  height: 40px;
+  height: $form-control-height;
   font-family: $proxima-nova-semi-bold;
 
   &::placeholder {
-    color: #979797;
-    font-size: 10px;
-    line-height: 12px;
+    color: $form-control-color;
+    font-size: $form-control-font-size;
+    line-height: $form-control-line-height;
   }
 }
 
 .calobs-form select {
-  font-size: 10px;
-  line-height: 12px;
+  font-size: $form-control-font-size;
+  line-height: $form-control-line-height;
 }
 
 @include media-breakpoint-up(lg) {
-  .calobs-form .form-label {
-    font-size: 15px;
+  .calobs-form {
+    max-width: 550px;
   }
 
-  .calobs-form .custom-control-label {
-    font-size: 15px;
+  .calobs-form .form-title {
+    margin-bottom: 2.5rem;
   }
 
   .calobs-form .form-control {
-    height: 50px;
+    height: $form-control-lg-height;
 
     &::placeholder {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: $form-control-lg-font-size;
+      line-height: $form-control-lg-line-height;
     }
   }
 
   .calobs-form select {
-    font-size: 14px;
+    font-size: $form-control-lg-font-size;
   }
 }
