@@ -60,6 +60,12 @@ $form-control-lg-line-height: 18px !default;
       font-size: $form-control-lg-font-size;
       line-height: $form-control-lg-line-height;
     }
+    &:focus {
+      // placeholder (when focus)
+      &::placeholder {
+        color: transparent;
+      }
+    }
   }
 
   .calobs-form select {

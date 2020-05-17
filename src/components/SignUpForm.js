@@ -62,7 +62,6 @@ const SignUpForm = () => {
                 placeholder="Username"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
           <div className={"col-6 col-lg-6"}>
@@ -78,7 +77,6 @@ const SignUpForm = () => {
                 placeholder="Email"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
         </div>
@@ -115,7 +113,6 @@ const SignUpForm = () => {
                 placeholder="Password"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
           <div className={"col-6 col-lg-6"}>
@@ -131,7 +128,6 @@ const SignUpForm = () => {
                 placeholder="Password confirmation"
                 required
               />
-              <span className={"form-focus"} />
             </fieldset>
           </div>
         </div>
