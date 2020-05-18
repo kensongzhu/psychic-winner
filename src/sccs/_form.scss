@@ -1,12 +1,16 @@
+// form label
 $form-label-font_size: 14px !default;
 $form-label-line-height: 1.25 !default;
+
+// form control
+$form-control-font-size: 10px !default;
+$form-control-lg-font-size: 14px !default;
+$form-control-line-height: 2.5 !default;
+$form-control-lg-line-height: $form-control-line-height !default;
+
 $form-control-height: 40px !default;
 $form-control-lg-height: 50px !default;
 $form-control-color: #979797 !default;
-$form-control-font-size: 10px !default;
-$form-control-line-height: 12px !default;
-$form-control-lg-font-size: 14px !default;
-$form-control-lg-line-height: 18px !default;
 
 .calobs-form .form-title {
   margin-bottom: 1.25rem;
@@ -37,6 +41,13 @@ $form-control-lg-line-height: 18px !default;
     font-size: $form-control-font-size;
     line-height: $form-control-line-height;
   }
+
+  &:focus {
+    // placeholder (when focus)
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
 
 .calobs-form select {
@@ -59,12 +70,6 @@ $form-control-lg-line-height: 18px !default;
     &::placeholder {
       font-size: $form-control-lg-font-size;
       line-height: $form-control-lg-line-height;
-    }
-    &:focus {
-      // placeholder (when focus)
-      &::placeholder {
-        color: transparent;
-      }
     }
   }
 
