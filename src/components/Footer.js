@@ -1,6 +1,5 @@
 import React from "react";
-// import eifer from "../eifer.svg";
-// import edf from "../edf.svg";
+import { FooterLink } from "../Elements/StyledLink";
 
 import eifer from "../eifer.png";
 import edf from "../edf.png";
@@ -35,21 +34,21 @@ const Footer = () => (
         "col-12 col-lg-auto text-center text-lg-right align-self-lg-end"
       }
     >
-      <a href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
+      <FooterLink href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
         Privacy Policy
-      </a>
-      <a href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
+      </FooterLink>
+      <FooterLink href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
         Imprint
-      </a>
-      <a href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
+      </FooterLink>
+      <FooterLink href={"/"} className={"px-2 px-md-3 text-decoration-none"}>
         Terms and Conditions
-      </a>
-      <a
+      </FooterLink>
+      <FooterLink
         href="mailto:info-calobs@eifer.org"
         className={"pl-2 pl-md-3 text-decoration-none"}
       >
         Contact
-      </a>
+      </FooterLink>
     </div>
   </footer>
 );

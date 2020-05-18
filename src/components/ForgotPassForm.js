@@ -1,4 +1,6 @@
 import React from "react";
+import StyledButton from "../Elements/StyledButton";
+import { StyledInput } from "../Elements/StyledInput";
 
 const ForgotPassword = () => {
   const handleSubmit = (evt) => evt.preventDefault();
@@ -12,7 +14,7 @@ const ForgotPassword = () => {
           <label className={"form-label"} htmlFor="username-or-email">
             Username / Email:
           </label>
-          <input
+          <StyledInput
             id="username-or-email"
             type="text"
             className="form-control"
@@ -23,13 +25,13 @@ const ForgotPassword = () => {
         </fieldset>
 
         <div className={"d-flex flex-wrap justify-content-center mt-6"}>
-          <button
+          <StyledButton
             id="btn-recover-pass"
             type="submit"
             className="btn btn-primary submit-btn mb-3"
           >
             Send
-          </button>
+          </StyledButton>
         </div>
       </form>
     </div>

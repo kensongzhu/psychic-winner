@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import captcha from "../captcha.png";
+import StyledButton from "../Elements/StyledButton";
+import { StyledInput, StyledSelect } from "../Elements/StyledInput";
 
 const SignUpForm = () => {
   const [company, setCompany] = useState("Choose...");
@@ -20,7 +22,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="first-name">
                 First name
               </label>
-              <input
+              <StyledInput
                 id="first-name"
                 type="text"
                 className="form-control"
@@ -35,7 +37,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="last-name">
                 Last name
               </label>
-              <input
+              <StyledInput
                 id="last-name"
                 type="text"
                 className="form-control"
@@ -54,7 +56,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="username">
                 Username
               </label>
-              <input
+              <StyledInput
                 id="username"
                 type="text"
                 className="form-control"
@@ -69,7 +71,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="email">
                 Email
               </label>
-              <input
+              <StyledInput
                 id="email"
                 type="email"
                 className="form-control"
@@ -85,7 +87,7 @@ const SignUpForm = () => {
           <label className={"form-label"} htmlFor="company">
             Company
           </label>
-          <select
+          <StyledSelect
             id="company"
             className="form-control"
             onChange={(evt) => setCompany(evt.target.value)}
@@ -95,7 +97,7 @@ const SignUpForm = () => {
             <option value={"Company 1"}>Company 1</option>
             <option value={"Company 2"}>Company 2</option>
             <option value={"Company 3"}>Company 3</option>
-          </select>
+          </StyledSelect>
         </fieldset>
 
         {/* Password and Password confirmation   */}
@@ -105,7 +107,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="password">
                 Password
               </label>
-              <input
+              <StyledInput
                 id="password"
                 type="password"
                 className="form-control"
@@ -120,7 +122,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="password-confirm">
                 Password confirmation
               </label>
-              <input
+              <StyledInput
                 id="password-confirm"
                 type="password"
                 className="form-control"
@@ -142,7 +144,7 @@ const SignUpForm = () => {
               <label className={"form-label"} htmlFor="captcha">
                 Captcha
               </label>
-              <input
+              <StyledInput
                 id="captcha"
                 type="text"
                 className="form-control"
@@ -154,7 +156,7 @@ const SignUpForm = () => {
         </div>
 
         <div className="custom-control custom-checkbox py-2">
-          <input
+          <StyledInput
             type="checkbox"
             className="custom-control-input"
             id="agree-terms"
@@ -168,13 +170,13 @@ const SignUpForm = () => {
         </div>
 
         <div className={"d-flex justify-content-center"}>
-          <button
+          <StyledButton
             id="btn-recover-pass"
             type="submit"
             className="btn btn-primary submit-btn mb-3 mt-3"
           >
             Register
-          </button>
+          </StyledButton>
         </div>
       </form>
     </div>

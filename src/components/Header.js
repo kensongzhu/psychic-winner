@@ -2,17 +2,20 @@ import React from "react";
 import calbos125 from "../calobs125.png";
 import calobs150 from "../calobs150.png";
 import { Link, Route, Switch } from "react-router-dom";
+import { RouteLink } from "../Elements/StyledLink";
+import ThemePicker from "./ThemePicker";
 
-const PageNavigator = ({ description, to, where }) => (
+const PageNavigator = ({ description, to, where, setTheme }) => (
   <>
     <span className={"mr-2"}>{description}</span>
-    <Link to={to} className={"text-decoration-none"}>
+    <RouteLink to={to} className={"text-decoration-none"}>
       {where}
-    </Link>
+    </RouteLink>
+    <ThemePicker setTheme={setTheme} />
   </>
 );
 
-const Header = () => (
+const Header = ({ setTheme }) => (
   <header
     className={"row no-gutters justify-content-between align-items-center"}
   >
@@ -44,6 +47,7 @@ const Header = () => (
               description={"Don't have an account?"}
               to={"join-now"}
               where={"Join Now"}
+              setTheme={setTheme}
             />
           )}
         />
@@ -54,6 +58,7 @@ const Header = () => (
               description={"Already have an account?"}
               to={"/"}
               where={"Sign in"}
+              setTheme={setTheme}
             />
           )}
         />
@@ -61,7 +66,12 @@ const Header = () => (
         <Route
           path={"/forgot-password"}
           render={() => (
-            <PageNavigator description={"Back to"} to={"/"} where={"Sign in"} />
+            <PageNavigator
+              description={"Back to"}
+              to={"/"}
+              where={"Sign in"}
+              setTheme={setTheme}
+            />
           )}
         />
 

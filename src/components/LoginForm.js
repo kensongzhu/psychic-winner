@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { StyledInput } from "../Elements/StyledInput";
+import StyledButton from "../Elements/StyledButton";
+import { RouteLink } from "../Elements/StyledLink";
 
 const LoginForm = () => {
   const [username, setUsername] = useState("jon.snow@got.org");
@@ -35,7 +38,7 @@ const LoginForm = () => {
           <label className={"form-label"} htmlFor="login-username">
             Username
           </label>
-          <input
+          <StyledInput
             id="login-username"
             type="text"
             className="form-control"
@@ -55,15 +58,15 @@ const LoginForm = () => {
             }
           >
             <label htmlFor="login-password">Password</label>
-            <Link
+            <RouteLink
               to="/forgot-password"
               className={"text-decoration-none f-regular"}
             >
               {"Forgot password"}
-            </Link>
+            </RouteLink>
           </div>
 
-          <input
+          <StyledInput
             id="login-password"
             type="password"
             className="form-control"
@@ -77,13 +80,13 @@ const LoginForm = () => {
         </fieldset>
 
         <div className={"d-flex justify-content-center"}>
-          <button
+          <StyledButton
             id="btn-login"
             type="submit"
             className="btn btn-primary submit-btn my-1"
           >
             Sign in
-          </button>
+          </StyledButton>
         </div>
       </form>
     </div>
