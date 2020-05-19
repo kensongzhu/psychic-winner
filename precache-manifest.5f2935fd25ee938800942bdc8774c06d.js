@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "216bf94781d77117e5084756e0589f1d",
+    "revision": "8b14198f2aee0bc931528c500b8d2978",
     "url": "/psychic-winner/index.html"
   },
   {
-    "revision": "54e291214cd3b647e724",
-    "url": "/psychic-winner/static/css/main.d040b1df.chunk.css"
+    "revision": "5cb09c3ac31313beb452",
+    "url": "/psychic-winner/static/css/main.12b81798.chunk.css"
   },
   {
-    "revision": "2256413d8d07f059893f",
-    "url": "/psychic-winner/static/js/2.f08bbbb4.chunk.js"
+    "revision": "d82c3400ad66fdefffa3",
+    "url": "/psychic-winner/static/js/2.2238dfa9.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/psychic-winner/static/js/2.f08bbbb4.chunk.js.LICENSE.txt"
+    "revision": "3453b8997016469371284a28c0e873e2",
+    "url": "/psychic-winner/static/js/2.2238dfa9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "54e291214cd3b647e724",
-    "url": "/psychic-winner/static/js/main.a8f11f97.chunk.js"
+    "revision": "5cb09c3ac31313beb452",
+    "url": "/psychic-winner/static/js/main.c3a17f9f.chunk.js"
   },
   {
     "revision": "579b54d65a27ad7f8cee",
     "url": "/psychic-winner/static/js/runtime-main.46110d93.js"
-  },
-  {
-    "revision": "eadb60b941cd3ebcd2c6e3254a16ab5b",
-    "url": "/psychic-winner/static/media/calobs.eadb60b9.svg"
   },
   {
     "revision": "3328cd254f7e093657842204b7e18fdc",
